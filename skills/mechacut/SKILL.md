@@ -69,6 +69,18 @@ Two honest moves:
    X draft to @Davincc asking for the tool. The human clicks or not —
    never post on their behalf.
 
+## The six payload shapes that bite (copy them exactly)
+- money/split  {"total":"100.00","participants":["a","b","c"]} — a LIST
+  of names, never a count. N names = N shares, cents sum to the total.
+- date/calc add {"base":"2026-11-24","op":"add","params":{"duration":"45d"}}
+- date/calc diff {"base":"2026-01-01","op":"diff","params":{"until":"2026-03-31"}}
+- hash/digest  {"data":"text-or-hex","algo":"sha256"}  (field is data/algo)
+- units/convert {"value":"90","from":"km/h","to":"m/s"}
+- num/parse    {"text":"1,234"} -> 400 AMBIGUOUS is the correct answer;
+  resubmit with prefer:"decimal" or "group". Never pick a reading yourself.
+When a 400 names an "expected" shape, that shape IS the contract —
+follow it, do not improvise a second guess.
+
 ## Pricing, so nothing surprises you
 - 🟢 most tools: free, keyless (rate-limited: 30/min per IP)
 - 🟡 under 32 KB of payload: free; bigger: $0.0005-0.001 per call
@@ -87,6 +99,8 @@ call, and the answer is the server's named target.
   same answer.
 - Never send credentials; a scanned secret stays scanned (nothing is
   stored — do not test that with real keys).
+- From python inside a sandbox: set a User-Agent header; the edge
+  blocks bare urllib (curl and browser fetch pass untouched).
 
 Full (longer) manual for strong agents: /SKILL.md · per-bundle:
 /SKILL-<pack>.md · machine-readable: /openapi.json · /mcp
