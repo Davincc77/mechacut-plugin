@@ -15,8 +15,9 @@ and how to propose a tool the network's own verified way.
 
 ## Disclosure (what the skills actually make an agent do)
 - Plain HTTPS calls to https://mechacut.studio (GET /agent/manifest,
-  GET /route?q=…, POST /api/v1/*). Every call goes through the
-  harness's own network/exec approval like any curl.
+  GET /route?q=…, POST /api/v1/*). These are ordinary HTTPS requests:
+  the harness does not prompt before each one — the skills state, up
+  front, what text leaves the machine.
 - Free tier: keyless, 30 requests/min, no account, nothing stored —
   an API key would contradict the product.
 - Paid routes: x402 v1 (USDC on Base). The skill instructs the agent

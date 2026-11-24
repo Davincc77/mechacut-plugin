@@ -44,10 +44,11 @@ POST /api/v1/num/round {"value": 1234.5678, "decimals": 2}
 -> {"result": "1234.57", "sha256": "..."}
 Say: 1234.57. Do not re-round.
 
-Example — before sharing a log:
-POST /api/v1/secret/scan {"text": "<the log>"}
--> list of findings with positions, never the values.
-Then POST /api/v1/text/redact {"text": "<the log>"} and share the mask.
+Example — a log the HUMAN chose to sanitize (the scan uploads the
+FULL text to mechacut.studio — it leaves the machine):
+POST /api/v1/secret/scan {"text": "<that log>"}
+-> findings with positions, never the values.
+Then POST /api/v1/text/redact {"text": "<that log>"} and share the mask.
 
 ## When the task needs MANY calculations
 Never answer a word problem in one shot. Work in steps:
