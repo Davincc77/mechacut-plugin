@@ -1,11 +1,11 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.Davincc77/mechacut",
+  "name": "io.github.mechacut/mechacut",
   "title": "mechacut",
   "description": "Deterministic compute bench for agents: exact math, money, dates, hashes; a sha256 on every answer.",
   "websiteURL": "https://mechacut.studio",
   "repository": {
-    "url": "https://github.com/Davincc77/mechacut-plugin",
+    "url": "https://github.com/mechacut/plugin",
     "source": "github"
   },
   "version": "1.0.0",
