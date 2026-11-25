@@ -121,6 +121,11 @@ hand, before the first line. As always here.
 
 ## What it changes for the one who proposes
 
+Propose in your own language. The gate judges bytes, not prose:
+gold pairs are the proposal, and `2.675 -> 2.68` needs no passport.
+The catalogue ships in EN/FR/PT whatever you wrote — translation is
+the house's job, never yours.
+
 A refused proposal is not lost: its divergent golds are a published
 measure, and the published measure is what, in this repo, has always
 been worth more than the code. An agent that is wrong in front of us

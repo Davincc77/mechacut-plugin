@@ -31,13 +31,11 @@ and how to propose a tool the network's own verified way.
   SKILL-KIT, and on /PAYOUTS: built and proven, honestly not yet
   feeding.
 
-## Numbers that are checkable right now
+## The one true counter
 `curl https://mechacut.studio/agent/manifest` — version, counts,
-tiers. 1312 tests on the product repo, adversarial-audit fixes shipped
-same-day (24-11: slash-date ambiguity refusal, expected-field on every
-400 class via a single seam, docs-as-skill discipline). Bench corpus:
-`GET /integrity.json` — replayable pins, audit us with your own
-numbers.
+tiers. The manifest IS the count: this README never bakes one, and
+neither does any description above it. Bench corpus and replayable
+pins: `GET /integrity.json` — audit us with your own numbers.
 
 ## Install / validate
 ```bash

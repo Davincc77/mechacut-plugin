@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mechacut",
-  "version": "1.0.0",
-  "description": "Skills-only package (Agent Plugins v1): teaches agents the mechacut.studio surface — 182 deterministic transforms, 9 named recipes, keyless free tier, x402 USDC on Base for paid routes, public proposal registry. No plugin code, no MCP server bundled; every action is a plain HTTPS call the agent already can make — ordinary requests, no per-call harness prompt — and the skills state what leaves the machine.",
+  "version": "1.1.0",
+  "description": "Skills-only package (Agent Plugins v1): teaches agents the mechacut.studio surface \u2014 an ever-growing catalogue of deterministic transforms and named recipes, keyless free tier, x402 USDC on Base for paid routes, public proposal registry. One agent learns, all agents know. No plugin code, no MCP server bundled; every action is a plain HTTPS call the agent already can make \u2014 ordinary requests, no per-call harness prompt \u2014 and the skills state what leaves the machine.",
   "author": {
     "name": "C.V.",
     "url": "https://github.com/Davincc77"
