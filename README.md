@@ -42,5 +42,5 @@ numbers.
 ## Install / validate
 ```bash
 hermes plugins validate .            # the catalog CI gate
-hermes plugins install Davincc77/mechacut-plugin
+hermes plugins install mechacut/plugin
 ```
