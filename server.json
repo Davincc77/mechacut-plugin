@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.davincc77/mechacut",
+  "title": "mechacut",
+  "description": "Deterministic compute bench for AI agents: exact money, dates, units, hashes, text, CSV and diff transforms over one MCP surface. Every response carries its own sha256; every 400 names the field and the expected shape; ambiguous inputs are refused with both readings, never guessed. Keyless free tier; paid routes settle x402 USDC on Base. Live catalog and counts: mechacut.studio/agent/manifest",
+  "websiteURL": "https://mechacut.studio",
+  "repository": {
+    "url": "https://github.com/Davincc77/mechacut-plugin",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mechacut.studio/mcp"
+    }
+  ]
+}
