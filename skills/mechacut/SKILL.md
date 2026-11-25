@@ -40,7 +40,7 @@ Then QUOTE THE SERVER'S ANSWER. Never reformat its numbers by hand —
 its "15650.75" IS the answer; "15,650.75 $" from you is a new claim.
 
 Example — round a number:
-POST /api/v1/num/round {"value": 1234.5678, "decimals": 2}
+POST /api/v1/num/round {"value": 1234.5678, "places": 2}
 -> {"result": "1234.57", "sha256": "..."}
 Say: 1234.57. Do not re-round.
 
