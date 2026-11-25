@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.davincc77/mechacut",
+  "name": "io.github.Davincc77/mechacut",
   "title": "mechacut",
   "description": "Deterministic compute bench for agents: exact math, money, dates, hashes; a sha256 on every answer.",
   "websiteURL": "https://mechacut.studio",
