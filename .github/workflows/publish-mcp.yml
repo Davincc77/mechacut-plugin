@@ -23,9 +23,11 @@ jobs:
           base_url="https://github.com/modelcontextprotocol/registry/releases/download/${MCP_PUBLISHER_VERSION}"
           curl --fail --location --silent --show-error --output "$archive" "$base_url/$archive"
           curl --fail --location --silent --show-error --output "$archive.sigstore.json" "$base_url/$archive.sigstore.json"
-          cosign verify-bundle --bundle "$archive.sigstore.json" \
-            --certificate-identity-regexp '^https://github.com/modelcontextprotocol/registry/.github/workflows/release.yml@.*' \
-            --certificate-issuer 'https://token.actions.githubusercontent.com' "$archive"
+          cosign verify-blob \
+            --bundle "$archive.sigstore.json" \
+            --certificate-identity "https://github.com/modelcontextprotocol/registry/.github/workflows/release.yml@refs/tags/${MCP_PUBLISHER_VERSION}" \
+            --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
+            "$archive"
           tar xzf "$archive" mcp-publisher
           rm -f "$archive" "$archive.sigstore.json"
       - name: Authenticate to MCP Registry
