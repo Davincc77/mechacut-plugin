@@ -35,7 +35,12 @@ and how to propose a tool the network's own verified way.
 ## The one true counter
 `curl https://mechacut.studio/agent/manifest` — version, counts,
 tiers. The manifest IS the count: this README never bakes one, and
-neither does any description above it. Bench corpus and replayable
+neither does any description above it.
+
+Two clocks, deliberately: this **package** (1.1.x) moves when the
+skills move; the **bench** (1.4x.0) moves when the server ships. The
+manifest is the only live counter of the second — no file in this
+repo bakes it. Bench corpus and replayable
 pins: `GET /integrity.json` — audit us with your own numbers.
 
 ## Install / validate
