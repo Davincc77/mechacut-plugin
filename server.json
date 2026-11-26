@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.mechacut/mechacut",
   "title": "mechacut",
-  "description": "Hermes plugin for mechacut.studio: skills for the deterministic bench (exact math, money, dates, hashes; sha256 per answer). This number versions the package only \u2014 the hosted bench's version is live at mechacut.studio/agent/manifest.",
+  "description": "Hermes plugin package for the mechacut.studio bench \u2014 live bench version: /agent/manifest.",
   "websiteURL": "https://mechacut.studio",
   "repository": {
     "url": "https://github.com/mechacut/plugin",
