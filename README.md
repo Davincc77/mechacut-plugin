@@ -25,11 +25,12 @@ and how to propose a tool the network's own verified way.
   decision, mechanically verified by the facilitator.
 - 50/50 revenue split for accepted external proposals: the splitter
   factory is live on Base (0xFB209Eb982baA11Ff18CAF1ef22f29729DC3709a)
-  but NO paid tool clone is registered yet — today nothing splits;
+  and the first paid tool clone is registered and serving:
+  /api/v1/chart pays 0x310852d642CcE4Dcb36C8027C79a5E0a2defCe64, with
+  the first split payment confirmed on-chain 2026-11-26;
   monetization requires the proposer's own Base account (EIP-55
   format-verified, responsibility with the owner). Said here, in the
-  SKILL-KIT, and on /PAYOUTS: built and proven, honestly not yet
-  feeding.
+  SKILL-KIT, and on /PAYOUTS: built, proven — and now feeding.
 
 ## The one true counter
 `curl https://mechacut.studio/agent/manifest` — version, counts,
